@@ -3,6 +3,9 @@
 A python command line client for IPStack's IP geolocation
 API. Returns a json object with latitude and longitude.
 
+Usage:
+IPStack_client.py 127.0.0.1
+
 Requires a (free from IPStack.com) API key. Run interactively to be
 prompted to save the key.
 
