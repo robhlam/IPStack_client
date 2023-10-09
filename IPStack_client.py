@@ -45,6 +45,7 @@ def get_api_key_from_disk_or_user(path=API_KEY_PATH):
       return api_key
     else: # not interactive
       print("No API key found. Please run interactively to save one.", file=sys.stderr)
+      sys.exit(-1)
 
 
 if __name__ == '__main__':
@@ -57,7 +58,7 @@ if __name__ == '__main__':
       print("Response from server:\n",
             json.dumps(response, indent=2),
             file=sys.stderr)
-      exit(-1)
+      sys.exit(-1)
     else:
       print(json.dumps({"longitude": response['longitude'], "latitude": response['latitude']}, indent=2))
   except:
