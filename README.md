@@ -3,7 +3,8 @@
 A python command line client for IPStack's IP geolocation
 API. Returns a json object with latitude and longitude.
 
-Requires a (free from IPStack.com) API key.
+Requires a (free from IPStack.com) API key. Run interactively to be
+prompted to save the key.
 
 Security isn't excellent (the free API is http!) but this
 makes it easier for the user to do a sensible thing and
